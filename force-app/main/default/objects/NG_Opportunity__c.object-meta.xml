@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>NextGen Opportunity</label>
+    <pluralLabel>NextGen Opportunities</pluralLabel>
+    <nameField>
+        <label>Deal Name</label>
+        <type>Text</type>
+    </nameField>
+
+    <fields>
+        <fullName>Deal_Name__c</fullName>
+        <label>Deal Name</label>
+        <type>Text</type>
+    </fields>
+
+    <fields>
+        <fullName>Amount__c</fullName>
+        <label>Amount</label>
+        <type>Currency</type>
+        <precision>18</precision>
+        <scale>2</scale>
+    </fields>
+
+    <fields>
+        <fullName>Stage__c</fullName>
+        <label>Stage</label>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Discovery</fullName>
+                </value>
+                <value>
+                    <fullName>Proposal</fullName>
+                </value>
+                <value>
+                    <fullName>Negotiation</fullName>
+                </value>
+                <value>
+                    <fullName>Closed Won</fullName>
+                </value>
+                <value>
+                    <fullName>Closed Lost</fullName>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+
+    <fields>
+        <fullName>Close_Date__c</fullName>
+        <label>Close Date</label>
+        <type>Date</type>
+    </fields>
+
+    <fields>
+        <fullName>NG_Lead__c</fullName>
+        <label>NextGen Lead</label>
+        <type>Lookup</type>
+        <referenceTo>NG_Lead__c</referenceTo>
+        <relationshipLabel>NextGen Lead</relationshipLabel>
+        <relationshipName>NG_Lead</relationshipName>
+    </fields>
+
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
