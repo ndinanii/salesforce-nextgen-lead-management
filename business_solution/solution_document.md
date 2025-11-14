@@ -95,13 +95,7 @@ A robust data model ensures data integrity, performance, and extensibility. We p
 
 ### Entity-Relationship Diagram (ERD) Overview
 
-```
-[NG_Lead__c] ----(1:N)---- [NG_Opportunity__c]
-     |
-     | (Lookup)
-     v
-[Account] (Standard)
-```
+![ERD Diagram](erd_diagram.png)
 
 - Leads are the central entity, linked to opportunities for potential deals.  
 - Integration with standard Account object for converted customers.
