@@ -65,7 +65,7 @@
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Opportunities from Converted Leads</name>
-    <reportType>NextGen_Leads_with_Opportunities__c</reportType>
+    <reportType>NextGen_Leads_with_Opportunities</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
