@@ -98,7 +98,6 @@ A robust data model ensures data integrity, performance, and extensibility. We p
 ![ERD Diagram](erd_diagram_v2.png)
 
 - Leads are the central entity, linked to opportunities for potential deals.  
-*Note: place the updated ERD image file as `business_solution/erd_diagram_v2.png`. If you'd like, I can add this file for you — upload the image or run the commands I provide below.*
 - Integration with standard Account object for converted customers.
 
 ### Detailed Schema
