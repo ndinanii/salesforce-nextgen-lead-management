@@ -4,7 +4,6 @@
     <category>other</category>
     <deployed>true</deployed>
     <description>NextGen Leads with related Opportunities for conversion reporting</description>
-    <developerName>NextGen_Leads_with_Opportunities</developerName>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>NG_Opportunities__r</relationship>
