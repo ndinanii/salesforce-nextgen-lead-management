@@ -12,6 +12,20 @@
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <label>NextGen Sales Console</label>
     <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>NG_Lead__c</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>NG_Lead__c</pageOrSobjectType>
+        <type>Default</type>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>NG_Opportunity__c</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>NG_Opportunity__c</pageOrSobjectType>
+        <type>Default</type>
+    </profileActionOverrides>
     <tabs>NG_Lead__c</tabs>
     <tabs>NG_Opportunity__c</tabs>
     <tabs>standard-report</tabs>
