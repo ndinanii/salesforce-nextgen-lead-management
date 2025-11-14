@@ -23,11 +23,6 @@
     </objectPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>NG_Lead__c.Email__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>NG_Lead__c.Phone__c</field>
         <readable>true</readable>
     </fieldPermissions>
