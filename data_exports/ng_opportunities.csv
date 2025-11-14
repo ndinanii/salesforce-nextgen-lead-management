@@ -1,0 +1,4 @@
+Deal_Name__c,Amount__c,Stage__c,Close_Date__c,NG_Lead__r.Email__c
+Test Opportunity 1,1000.00,Discovery,2025-12-14,test@test.com
+Converted Lead Opportunity,2500.00,Proposal,2025-12-14,converted_with_phone@test.com
+Prospect Opportunity,500.00,Discovery,2025-12-14,prospect@example.com

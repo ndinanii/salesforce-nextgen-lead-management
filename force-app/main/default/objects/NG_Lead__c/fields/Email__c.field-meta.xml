@@ -5,5 +5,5 @@
     <required>true</required>
     <type>Email</type>
     <unique>true</unique>
-    <externalId>false</externalId>
+    <externalId>true</externalId>
 </CustomField>
