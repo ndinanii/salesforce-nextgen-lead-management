@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOnInsert>Block</actionOnInsert>
+    <actionOnUpdate>Block</actionOnUpdate>
+    <alertText>You are attempting to create a duplicate lead. A lead with this email already exists.</alertText>
+    <description>Prevents duplicate leads based on email address</description>
+    <duplicateRuleFilter>
+        <booleanFilter>1</booleanFilter>
+        <duplicateRuleFilterItems>
+            <field>Email__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+            <sortOrder>1</sortOrder>
+            <table>NG_Lead__c</table>
+        </duplicateRuleFilterItems>
+    </duplicateRuleFilter>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>NG_Lead__c</matchRuleSObjectType>
+        <matchingRule>NG_Lead_Email_Matching_Rule</matchingRule>
+        <objectMapping xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>NG Lead Duplicate Email Rule</masterLabel>
+    <operationsOnInsert>Alert</operationsOnInsert>
+    <operationsOnInsert>Block</operationsOnInsert>
+    <operationsOnUpdate>Alert</operationsOnUpdate>
+    <operationsOnUpdate>Block</operationsOnUpdate>
+    <securityOption>EnforceSharingRules</securityOption>
+    <sortOrder>1</sortOrder>
+</DuplicateRule>

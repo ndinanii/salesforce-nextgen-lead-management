@@ -4,9 +4,5 @@ Test User,test@test.com,,New,Product B
 Test User Duplicate,test@test.com,,New,Product B
 Converted Lead With Phone,converted_with_phone@test.com,555-0100,Converted,Product C
 Sales Prospect,prospect@example.com,555-0200,New,Product D
-Name,Email__c,Phone__c,Status__c,Product_Interest__c
-Test User No Email,,,New,Product A
-Test User,test@test.com,,New,Product B
-Test User Duplicate,test@test.com,,New,Product B
 Converted Lead With Phone,converted_with_phone@test.com,555-0100,Converted,Product C
 Sales Prospect,prospect@example.com,555-0200,New,Product D
