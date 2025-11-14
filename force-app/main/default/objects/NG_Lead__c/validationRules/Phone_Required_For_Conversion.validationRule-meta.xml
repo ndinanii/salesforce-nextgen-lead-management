@@ -8,5 +8,5 @@
    ISBLANK(Phone__c)
 )</errorConditionFormula>
     <errorDisplayField>Phone__c</errorDisplayField>
-    <errorMessage>Phone Number is required before converting a Lead. Please enter a valid phone number.</errorMessage>
+    <errorMessage>Please capture a Phone Number before converting this Lead.</errorMessage>
 </ValidationRule>
