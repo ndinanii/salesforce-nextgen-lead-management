@@ -10,15 +10,17 @@
     <fields>
         <fullName>Deal_Name__c</fullName>
         <label>Deal Name</label>
+        <length>255</length>
         <type>Text</type>
     </fields>
 
     <fields>
         <fullName>Amount__c</fullName>
         <label>Amount</label>
-        <type>Currency</type>
         <precision>18</precision>
+        <required>false</required>
         <scale>2</scale>
+        <type>Currency</type>
     </fields>
 
     <fields>
@@ -55,11 +57,13 @@
 
     <fields>
         <fullName>NG_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
         <label>NextGen Lead</label>
-        <type>Lookup</type>
         <referenceTo>NG_Lead__c</referenceTo>
-        <relationshipLabel>NextGen Lead</relationshipLabel>
-        <relationshipName>NG_Lead</relationshipName>
+        <relationshipLabel>NextGen Opportunities</relationshipLabel>
+        <relationshipName>NG_Opportunities</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
     </fields>
 
     <deploymentStatus>Deployed</deploymentStatus>
