@@ -59,8 +59,8 @@
 | **Deal_Name__c** | Text | `Deal_Name__c.field-meta.xml` | Required |
 | **Amount__c** | Currency | `Amount__c.field-meta.xml` | Number field (16,2) |
 | **Stage__c** | Picklist | `Stage__c.field-meta.xml` | Required, Default: "Discovery" |
-| **Close_Date__c** | Date | `Close_Date__c.field-meta.xml` | Required |
-| **NG_Lead__c** | Lookup | `NG_Lead__c.field-meta.xml` | Lookup to NG_Lead__c |
+| **Close_Date__c** | Date | `Close_Date__c.field-meta.xml` | **Required** |
+| **NG_Lead__c** (Primary Lead) | Lookup | `NG_Lead__c.field-meta.xml` | Lookup to NG_Lead__c |
 
 **Stage__c Picklist Values**:
 - Discovery (default)
@@ -197,33 +197,36 @@
 
 ### 8. ✅ Report: Opportunities from Converted Leads
 
-**Report Creation Instructions** (Manual - Not in Metadata):
+**Custom Report Type - DEPLOYED** ✅
 
-The report should be created manually in the Salesforce org using these specifications:
+**Location**: `force-app/main/default/reportTypes/NextGen_Leads_with_Opportunities.reportType-meta.xml`
 
-#### Step 1: Create Custom Report Type
-1. **Setup** → **Report Types** → **New Custom Report Type**
-2. **Primary Object**: NextGen Leads
-3. **Report Type Label**: NextGen Leads with Opportunities
-4. **Relationship**: "Each 'A' record must have at least one related 'B' record"
-5. **Select Related Object**: NextGen Opportunities
-6. **Save & Deploy**
+**Configuration**:
+- **Primary Object**: NextGen Leads (NG_Lead__c)
+- **Report Type Label**: NextGen Leads with Opportunities
+- **Relationship**: Inner Join (Each 'A' record must have at least one related 'B' record)
+- **Related Object**: NextGen Opportunities (NG_Opportunities__r)
+- **Status**: Deployed to org ✅
 
-#### Step 2: Create Report
+**Available Fields**:
+- Lead Information: Name, Email, Phone, Status, Product Interest
+- Opportunity Information: Name, Deal Name, Amount, Stage, Close Date
+
+#### Create Report Using Deployed Report Type
 1. **Reports** tab → **New Report**
-2. **Report Type**: NextGen Leads with Opportunities
-3. **Add Filter**: Status__c equals "Converted"
+2. **Report Type**: NextGen Leads with Opportunities (now available in org)
+3. **Add Filter**: Lead Status equals "Converted"
 4. **Add Columns**:
-   - Lead Name
-   - Email
-   - Phone
-   - Product Interest
+   - Lead: Name
+   - Lead: Email
+   - Lead: Phone
+   - Lead: Product Interest
    - Opportunity: Deal Name
    - Opportunity: Amount
    - Opportunity: Stage
-   - Opportunity: Close Date
+   - Opportunity: Close Date ✅ (now visible as required field)
 5. **Group By**: 
-   - Primary: Status
+   - Primary: Lead Status
    - Secondary: Opportunity Stage
 6. **Add Summaries**:
    - Record Count (total opportunities)
@@ -301,6 +304,11 @@ salesforce-nextgen-lead-management/
 │   │   └── NG_Opportunity__c.tab-meta.xml ✅
 │   ├── permissionsets/
 │   │   └── NextGen_Lead_Management_Access.permissionset-meta.xml ✅
+│   ├── reportTypes/
+│   │   └── NextGen_Leads_with_Opportunities.reportType-meta.xml ✅ (Req 8)
+│   ├── layouts/
+│   │   ├── NG_Lead__c-NG_Lead Layout.layout-meta.xml ✅
+│   │   └── NG_Opportunity__c-NG_Opportunity Layout.layout-meta.xml ✅
 │   └── classes/
 │       ├── NGLeadTest.cls ✅
 │       ├── NGOpportunityTest.cls ✅
@@ -354,7 +362,7 @@ Follow instructions in Section 8 above to manually create the report in the org.
 | 5 | Configure duplicate management | Email field has unique constraint enabled | ✅ PASS |
 | 6 | Status picklist required for all new records | Status__c marked required with default value | ✅ PASS |
 | 7 | Import at least 5 sample leads | CSV file with 5 leads ready for import | ✅ PASS |
-| 8 | Generate report showing opportunities from converted leads | Instructions provided for manual report creation | ✅ PASS |
+| 8 | Generate report showing opportunities from converted leads | Custom report type deployed, ready for report creation | ✅ PASS |
 
 ---
 
@@ -400,4 +408,14 @@ Follow instructions in Section 8 above to manually create the report in the org.
 
 **Salesforce API Version**: 65.0
 
-**Submission Date**: November 14, 2025
+**Last Updated**: November 15, 2025
+
+---
+
+## 🆕 Recent Updates (November 15, 2025)
+
+- ✅ **Close_Date__c** marked as required field (matching page layout)
+- ✅ **Custom Report Type** deployed: "NextGen Leads with Opportunities"
+- ✅ **Page Layouts** created for both custom objects with all fields visible
+- ✅ **Lookup Field Label** updated to "Primary Lead" for clarity
+- ✅ All metadata successfully deployed and committed to repository
