@@ -142,5 +142,4 @@ A robust data model ensures data integrity, performance, and extensibility. We p
 
 This phased approach transforms the lead leakage problem into a structured, implementable solution. By starting with deep problem understanding and user-centric requirements, we ensure the final system delivers tangible business value. The data model provides a scalable foundation, ready for development and testing.
 
-Next steps include prototyping the custom objects in Salesforce, implementing validation rules, and building the conversion process. This document serves as a blueprint for the development team, ensuring alignment and reducing rework.</content>
-<parameter name="filePath">c:\Users\Wonga\Desktop\Career Roadmap\salesforce_projects\salesforce-nextgen-lead-management\business_solution\solution_document.md
+Next steps include prototyping the custom objects in Salesforce, implementing validation rules, and building the conversion process. This document serves as a blueprint for the development team, ensuring alignment and reducing rework.
