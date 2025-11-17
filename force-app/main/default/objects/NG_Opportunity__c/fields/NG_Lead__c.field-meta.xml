@@ -4,8 +4,8 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <label>Primary Lead</label>
     <referenceTo>NG_Lead__c</referenceTo>
-    <relationshipLabel>NextGen Opportunities</relationshipLabel>
-    <relationshipName>NG_Opportunities</relationshipName>
+    <relationshipLabel>Primary Lead Opportunities</relationshipLabel>
+    <relationshipName>Primary_Lead_Opportunities</relationshipName>
     <required>false</required>
     <type>Lookup</type>
     <externalId>false</externalId>

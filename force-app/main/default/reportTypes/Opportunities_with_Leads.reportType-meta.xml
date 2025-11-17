@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>NG_Opportunity__c</baseObject>
+    <category>opportunities</category>
+    <deployed>true</deployed>
+    <description>Shows all Opportunities and their related Lead information.</description>
+    <label>Opportunities with Leads</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>NG_Opportunity__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Deal_Name__c</field>
+            <table>NG_Opportunity__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Amount__c</field>
+            <table>NG_Opportunity__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Stage__c</field>
+            <table>NG_Opportunity__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Close_Date__c</field>
+            <table>NG_Opportunity__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>NG_Lead__c</field>
+            <table>NG_Opportunity__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>NG_Opportunity__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>NG_Opportunity__c</table>
+        </columns>
+        <masterLabel>Opportunity Information</masterLabel>
+    </sections>
+</ReportType>
