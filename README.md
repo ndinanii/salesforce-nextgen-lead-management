@@ -17,15 +17,53 @@
 
 ## Table of Contents
 1. [The Business Problem](#the-business-problem)
-2. [Phase 1: Requirements Elicitation & User Stories](#phase-1-requirements-elicitation--user-stories)
-3. [Phase 2: Business Process Mapping](#phase-2-business-process-mapping)
-4. [Phase 3: Data Modeling (ERD & Schema)](#phase-3-data-modeling-erd--schema)
-5. [Phase 4: Build & Implementation](#phase-4-build--implementation)
-6. [Phase 5: Security & Automation](#phase-5-security--automation)
-7. [Phase 6: Testing & Quality Assurance](#phase-6-testing--quality-assurance)
-8. [Results & Business Value](#results--business-value)
-9. [Technical Documentation](#technical-documentation)
-10. [Strategist's Reflection](#strategists-reflection)
+2. [Engineering Philosophy: The Colt Protocol](#engineering-philosophy-the-colt-protocol)
+3. [Phase 1: Requirements Elicitation & User Stories](#phase-1-requirements-elicitation--user-stories)
+4. [Phase 2: Business Process Mapping](#phase-2-business-process-mapping)
+5. [Phase 3: Data Modeling (ERD & Schema)](#phase-3-data-modeling-erd--schema)
+6. [Phase 4: Build & Implementation](#phase-4-build--implementation)
+7. [Phase 5: Security & Automation](#phase-5-security--automation)
+8. [Phase 6: Testing & Quality Assurance](#phase-6-testing--quality-assurance)
+9. [Results & Business Value](#results--business-value)
+10. [Technical Documentation](#technical-documentation)
+11. [Strategist's Reflection](#strategists-reflection)
+
+---
+
+## Engineering Philosophy: The Colt Protocol
+
+This project follows **The Colt Protocol** methodology, a systematic 6-stage approach to Salesforce development:
+
+### The 6-Stage Pipeline
+
+1. **Requirements Elicitation (The "Why" & "What")** - Define goals, personas, and Definition of Done (DoD)
+2. **User-Centric Design (The "Look & Feel")** - Strict adherence to Lightning Design System (SLDS)
+3. **Business Process Mapping (The "Flow")** - Synchronous vs. Asynchronous processing decisions
+4. **Data Modeling & ERD (The "Skeleton")** - Security-first schema design with OWD and sharing rules
+5. **Defining Testable Criteria (The "Safety Net")** - Test-Driven Development (TDD) with 85%+ coverage
+6. **Clear Documentation (The "Legacy")** - ApexDoc standards and structured project artifacts
+
+### 📂 Project Documentation
+
+Comprehensive documentation following The Colt Protocol is available in the `_documentation/` folder:
+
+```
+_documentation/
+├── 00_Project_Brief/          # Project Charter & Stakeholder Register
+├── 01_Requirements/           # User Stories & Functional Specs
+├── 02_Design/                 # UX Wireframes, UI Mockups, SLDS Theme Map
+├── 03_Architecture/           # Process Flows, ERD, Security Matrix
+├── 04_Testing/                # Test Plan, Data Factory Spec, UAT Scripts
+└── 05_Manuals/                # Admin Guide & User Guide
+```
+
+### Salesforce Best Practices Applied
+
+- **Data Integrity**: Validation rules, unique constraints, duplicate prevention
+- **Security Model**: OWD, sharing rules, field-level security
+- **Process Automation**: Record-triggered flows, assignment rules
+- **Test-Driven Development**: Comprehensive test coverage with TestDataFactory
+- **Governance**: Clear documentation and security audit checklist
 
 ---
 
