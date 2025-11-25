@@ -94,13 +94,10 @@ A lead cannot be marked as “Converted” without a phone number—ensuring sal
 ## Entity Relationship Diagram & Visuals
 
 Below is the core data model and flow connecting leads to opportunities.  
-Insert your ERD here (replace with your actual diagram):
 
-![ERD Diagram](path_to_erd_image.png)
 
-If you have UI mockups or flowcharts, include those here:
+![ERD Diagram]((https://github.com/ndinanii/salesforce-nextgen-lead-management/blob/main/business_solution/erd_diagram.png))
 
-![Lead Conversion Flow](path_to_visual_mockup.png)
 
 ---
 
